@@ -1,0 +1,289 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary_color_dark</item>
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/WindowBackground</item>
+        <item name="android:textColorPrimary">@color/TextPrimaryColor</item>
+        <item name="android:textColorSecondary">@color/TextSecondaryColor</item>
+        <item name="android:popupMenuStyle">@style/myPopup</item>
+        <item name="android:textViewStyle">@style/myTextViewStyle</item>
+    </style>
+
+    <style name="myTextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/TextPrimaryColor</item>
+    </style>
+
+    <style name="wrappedItemsPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+    </style>
+
+    <style name="myPopup" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <!--<item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="list_view_product_title">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="list_view_quantity_in_cart">
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@drawable/quantity_in_cart</item>
+    </style>
+    <style name="list_view_product_image">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+    <style name="list_view_product_old_price">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_view_product_current_price">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="list_view_remove_from_cart_logo">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:src">@drawable/remove_from_cart_icon</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="options_menu_style">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="list_view_add_to_wish_list_logo">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/add_to_wish_list_icon_grey</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="list_view_product_quantity_label">
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:text">"Qty: "</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="list_view_product_quantity_viewgroup">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="list_view_product_qty_decr">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/quantity_decr_blue</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="list_view_product_quantity">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/light_blue</item>
+    </style>
+    <style name="list_view_product_qty_incr">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/quantity_incr_blue</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="list_view_add_to_cart_logo">
+        <item name="android:src">@drawable/add_to_cart_icon_grey</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="detail_view_product_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/abc_text_size_headline_material</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:background">@color/light_yellow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="detail_view_product_image">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="detail_view_product_old_price">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="detail_view_product_current_price">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/abc_text_size_large_material</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="detail_view_similar_products">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="detail_view_related_products">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="detail_view_offer_products">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="VerticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="list_view_product_title_cart">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">@dimen/abc_text_size_subhead_material</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="@style/AppTheme">
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarTabStyle">@style/MyActionBarTabs</item>
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>
+    </style>
+
+    <!-- ActionBar tabs styles -->
+    <style name="MyActionBarTabs" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <!-- tab indicator -->
+        <item name="android:background">@drawable/tab_bar_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/tab_bar_background</item>
+    </style>
+
+    <!-- ActionBar tab text styles -->
+    <style name="MyActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <!-- tab indicator -->
+        <item name="android:maxWidth">200dp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" />
+
+    <style name="cust_dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/lightest_grey</item>
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@color/purple_blue</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

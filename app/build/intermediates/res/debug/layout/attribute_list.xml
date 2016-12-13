@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="200dp"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    android:gravity="center_vertical"
+    android:background="#202020"
+    android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+    android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+    android:textSize="@dimen/abc_text_size_medium_material"
+    android:textColor="#FFFFFF"
+/>
+<!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/layout/attribute_list.xml -->

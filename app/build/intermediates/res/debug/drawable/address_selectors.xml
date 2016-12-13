@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item><shape>
+            <padding android:bottom="3dp" android:left="6dp" android:right="3dp" android:top="3dp" />
+            <solid android:color="@color/white"/>
+        </shape></item>
+        <item ><bitmap android:gravity="bottom|right" android:src="@drawable/ic_action_expand_small" />
+        </item>
+    </layer-list></item>
+</selector><!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/drawable/address_selectors.xml -->

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="Oops! Your Cart Is Empty"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textColor="@color/dark_grey"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal|bottom"/>
+    <TextView android:id="@+id/delivery_charge_note_empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Shop for \u20B9 250 for free home delivery"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textColor="@color/black"
+        android:background="@drawable/round_corner_grey_box"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_horizontal">
+        <Button android:id="@+id/shop_button"
+            android:layout_height="50dp"
+            android:layout_width="150dp"
+            android:text="SHOP"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textColor="@color/white"
+            android:background="@drawable/shop_button"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

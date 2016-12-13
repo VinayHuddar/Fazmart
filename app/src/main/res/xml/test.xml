@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<Preference android:summary="@string/show_summary" android:persistent="false" android:title="@string/show" android:key="show"/>
+<Preference android:summary="@string/pick_summary" android:persistent="false" android:title="@string/pick" android:key="pick"/>
+<Preference android:summary="@string/about_summary" android:persistent="false" android:title="@string/about" android:key="about"/>
+</PreferenceScreen>

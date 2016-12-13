@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape>
+        <corners android:radius="4dp" />
+        <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+        <stroke android:color="@color/black" android:width="1dp"/>
+        <solid android:color="@color/white"/>
+    </shape></item>
+    <item ><bitmap android:gravity="bottom|right" android:src="@drawable/ic_action_expand_small" />
+    </item>
+</selector><!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/drawable/quantity_incr_decr_border.xml -->

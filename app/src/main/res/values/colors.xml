@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="primary_color">#8E4498</color>
+    <color name="primary_color_dark">#61166B</color>-->
+    <color name="primary_color">#AB6BB4</color>
+    <color name="primary_color_dark">#8E4498</color>
+    <color name="accent_color">#D0A1D6</color>
+    <color name="WindowBackground">#f4f4f4</color>
+    <color name="TextPrimaryColor">#3C3C3C</color>
+    <color name="TextSecondaryColor">#646464</color>
+
+    <color name="white">#ffffff</color>
+    <color name="lightest_grey">#f4f4f4</color>
+    <color name="lighter_grey">#e0e0e0</color>
+    <color name="light_grey">#c8c8c8</color>
+    <color name="dark_grey">#646464</color>
+    <color name="darker_grey">#3C3C3C</color>
+    <color name="black">#000000</color>
+    <color name="dark_green_shade1">#22B14C</color>
+    <color name="dark_green_shade2">#1FA346</color>
+    <color name="dark_green_shade3">#56B450</color>
+    <color name="green">#b4e61e</color>
+    <color name="light_green">#DEF49B</color>
+    <color name="very_light_green">#F5FBE4</color>
+    <color name="light_yellow">#FFFFC0</color>
+    <color name="only_red">#FF0000</color>
+    <color name="red">#EB5858</color>
+    <color name="light_red">#F07D7D</color>
+    <color name="very_light_red">#FAC8C8</color>
+    <color name="dark_blue_shade1">#55A5DA</color>
+    <color name="dark_blue_shade2">#2A80B9</color>
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#DEE7F2</color>
+    <color name="very_light_blue">#dfffff</color>
+    <color name="burgundy_darkest">#660066</color>
+    <color name="burgundy_dark">#772A82</color>
+    <color name="burgundy_light">#AB6BB4</color>
+    <color name="burgundy_lighter">#D0A1D6</color>
+    <color name="burgundy_lightest">#D0A1D6</color>
+    <color name="burgundy_lighter_than_lightest">#e7d2ea</color>
+    <color name="purple_blue">#6C4D9E</color>
+
+    <color name="transparent">#00000000</color>
+    <!--<color name="tab_highlight">#ff9ecfbf</color>
+    <color name="tab_color">#ff469b80</color>
+    <color name="tab_highlight">#7400A7</color>
+    <color name="tab_color">#AE00EA</color>-->
+    <color name="tab_highlight">#61166B</color>
+    <color name="tab_color">#8E4498</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+</resources>

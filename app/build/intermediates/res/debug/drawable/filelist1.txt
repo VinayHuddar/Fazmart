@@ -1,0 +1,17 @@
+{
+  "address": {
+    "address_id": 31,
+    "firstname": "sdfgsdfg",
+    "lastname": "Sfdgsdfg",
+    "apt_num": "sdfg",
+    "apt_id": 0,
+    "apt_name": "dfgsdfg",
+    "area_id": 0,
+    "area_name": "dsfgsdfg",
+    "postcode": "560040",
+    "city_id": 1,
+    "city": "Bangalore",
+    "zone_id": 1489,
+    "country_id": 99
+  }
+}

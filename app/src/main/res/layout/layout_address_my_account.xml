@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <include layout="@layout/layout_address"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp">
+        <CheckedTextView android:id="@+id/default_address_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address_checkbox_label"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:checked="false"
+            android:onClick="toggle"
+            android:drawableLeft="@android:drawable/checkbox_off_background"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"/>
+        <ImageView android:id="@+id/edit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/address_edit_button"
+            android:padding="2dp"
+            android:clickable="true"
+            android:layout_alignParentRight="true" />
+        <ImageView android:id="@+id/delete_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/remove_from_cart"
+            android:padding="2dp"
+            android:clickable="true"
+            android:layout_toLeftOf="@id/edit_address"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

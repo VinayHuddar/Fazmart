@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:padding="5dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/store_logo"/>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/kirana_waalaa"
+                    android:src="@drawable/kirana_waalaa"
+                    android:clickable="true"
+                    android:onClick="GotoGrocStore"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <ImageView android:id="@+id/doodh_waalaa"
+                    android:src="@drawable/doodh_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:onClick="GotoDelInfo"/>
+                <ImageView android:id="@+id/sabzi_waalaa"
+                    android:src="@drawable/sabzi_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/paper_waalaa"
+                    android:src="@drawable/paper_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <ImageView android:id="@+id/user"
+                    android:src="@drawable/user"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <ImageView android:id="@+id/car_wash_waalaa"
+                    android:src="@drawable/car_wash_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/istri_waalaa"
+                    android:src="@drawable/istri_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <ImageView android:id="@+id/bakery_waalaa"
+                    android:src="@drawable/bakery_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+                <ImageView android:id="@+id/gaon_waalaa"
+                    android:src="@drawable/gaon_waalaa"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:onClick="GotoPerfMeasurementUtility"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</FrameLayout>

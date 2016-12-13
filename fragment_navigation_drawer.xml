@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/googleDrawer"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/burgundy_lighter"
+        android:id="@+id/navigationHeader">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imgAvatar"
+            android:src="@drawable/fazmart_new_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/imgAvatar"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="48dp">
+
+            <ImageView android:id="@+id/user_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user" />
+            <TextView android:id="@+id/txtUsername"
+                android:layout_toRightOf="@id/user_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Hi Vinay"
+                android:textSize="@dimen/abc_text_size_subhead_material"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textIsSelectable="false" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_action_overflow" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/drawer_row"
+        android:id="@+id/signin_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationHeader"/>
+
+    <include layout="@layout/nav_drawer_item_group_layout"
+        android:id="@+id/browse_group"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/signin_row" />
+    <include layout="@layout/nav_drawer_item_group_layout"
+        android:id="@+id/offers_group"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/browse_group" />
+    <include layout="@layout/nav_drawer_item_group_layout"
+        android:id="@+id/help_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offers_group" />
+
+</RelativeLayout>

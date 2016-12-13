@@ -1,0 +1,116 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include layout="@layout/layout_loading_message" android:id="@+id/loading_message"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <TextView android:id="@+id/ProductName_DetailView"
+                style="@style/detail_view_product_name" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+                <TextView android:id="@+id/ItemsInCart_DetailView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.27"
+                    android:background="@drawable/items_in_cart_background"
+                    android:text="1 in Cart"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08">
+                    <ImageView android:id="@+id/RemoveFromCart_DetailView"
+                        android:src="@drawable/remove_from_cart_icon"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/ProductImage_DetailView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                style="@style/detail_view_product_image" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView android:id="@+id/ProductOldPrice_DetailView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"/>
+                <TextView android:id="@+id/ProductCurrentPrice_DetailView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:background="@color/white"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:gravity="center"/>
+                <TextView android:id="@+id/ProductSavings_DetailView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="left"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <TextView android:id="@+id/ProductOptions_DetailView"
+                android:layout_width="266dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textColor="@android:color/secondary_text_light"
+                android:background="@drawable/options_dropdown_background"/>
+            <LinearLayout android:id="@+id/WidgetGroup_DetailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/layout_detail_screen_input_widget"/>
+            </LinearLayout>
+            <TextView android:id="@+id/ProductDescriptionLabel_DetailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textColor="@android:color/secondary_text_light"
+                android:gravity="center"
+                android:background="@color/light_grey"/>
+            <TextView android:id="@+id/ProductDescription_DetailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Washington Apples are a natural supply of fibre and are fat free. They include polynutrients and anti-oxidants. The Calories of Washington Apple is 95. These Washington Apples are sweet, crisp, red, soft-skinned, highly aromatic juicy fruits. These are wealthy in antioxidant phyto-nutrients flavonoids and polyphenols. It includes beta-carotene and vitamin-C."
+                android:textSize="@dimen/abc_text_size_small_material"/>
+            <GridView android:id="@+id/SimilarProducts_DetailView"
+                style="@style/detail_view_similar_products" />
+            <GridView android:id="@+id/RelatedProducts_DetailView"
+                style="@style/detail_view_related_products" />
+            <GridView android:id="@+id/OfferProducts_DetailView"
+                style="@style/detail_view_offer_products" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout><!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/layout/activity_product_detail_screen.xml -->

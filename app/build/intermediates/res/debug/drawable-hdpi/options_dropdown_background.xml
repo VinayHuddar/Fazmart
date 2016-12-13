@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+              <solid android:color="#00000000" />
+              <stroke android:width="1dip" android:color="#E0E0E0"/>
+        </shape></item>
+        <item ><bitmap android:gravity="right"
+            android:src="@drawable/ic_action_expand_small"
+            android:paddingRight="5dp"/>
+        </item>
+    </layer-list></item>
+</selector>
+<!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/drawable-hdpi/options_dropdown_background.xml -->

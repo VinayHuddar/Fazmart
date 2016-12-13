@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/FilterDrawer"
+    android:fitsSystemWindows="true">
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textColor="@android:color/black"
+        android:background="@color/lighter_grey"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
+    <!--android:clickable="true"-->
+<!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/layout/fragment_filter_drawer.xml -->

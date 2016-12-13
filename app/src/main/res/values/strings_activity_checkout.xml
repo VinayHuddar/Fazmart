@@ -1,0 +1,72 @@
+<resources>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="checkout_step_1">STEP 1/3</string>
+    <string name="checkout_step_2">STEP 2/3</string>
+    <string name="checkout_step_3">STEP 3/3</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_email_id">Email Id</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="not_registered_note">"Haven't registered yet?"</string>
+    <string name="action_register">Register</string>
+    <string name="login_using_google_facebook">Sign in with</string>
+    <string name="action_continue_as_guest">Continue As Guest</string>
+    <string name="action_continue_as_guest_note">Note: You won\'t be able to avail the following benefits if you don\'t sign-in.\n\t1. Reward Points\n\t2. Discount Coupons\n\t3. Daily Basket plan</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="delivery_info">Delivery / Payment</string>
+    <string name="delivery_address">Enter Delivery Address</string>
+    <string name="prompt_customer_name">Name</string>
+    <string name="prompt_address_city">Select City</string>
+    <string name="prompt_address_area">Area</string>
+    <string name="prompt_address_apartment">Select Apartment</string>
+    <string name="prompt_address_flat">Flat</string>
+    <string name="prompt_address_mobile">Mobile #</string>
+    <string name="prompt_address_email">Email Id</string>
+    <string name="select_delivery_time">Select Delivery Time</string>
+    <string name="delivery_time_day">Day</string>
+    <string name="delivery_time_time">Time</string>
+    <string name="selected_slot_label">Slot selected: </string>
+    <string name="selected_slot">None</string>
+    <string name="next">Next</string>
+    <string name="button_label_done">Done</string>
+    <string name="button_label_cancel">Cancel</string>
+
+    <string name="order_summary">Order Summary</string>
+    <string name="price_summary">Price Summary</string>
+    <string name="confirm_and_pay">Confirm and pay</string>
+    <string name="total_cart_price_label">Total Cart Price</string>
+    <string name="apply_coupon_label">Apply Coupon</string>
+    <string name="apply_coupon_hint_text">Enter Coupon Code</string>
+    <string name="use_gift_voucher_label">Use Gift Voucher</string>
+    <string name="use_gift_voucher_hint_text">Enter Gift Voucher Code</string>
+    <string name="redeem_points_label">Redeem Points</string>
+    <string name="redeem_points_message">Points Accumulated :  </string>
+    <string name="redeem_points_hint_text">Number of Points to Redeem</string>
+    <string name="total_payable_label">Total Payable</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="delivery_charges_label">Delivery Charges</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_dialog_yes">Yes</string>
+    <string name="alert_dialog_no">No</string>
+    <string name="alert_dialog_retry">Retry</string>
+    <string name="alert_dialog_trylater">Try Later</string>
+    <string name="alert_dialog_continue">Continue</string>
+
+    <string name="mobile_label">Mobile:</string>
+    <string name="email_label">Email:</string>
+    <string name="delivery_address_summary">Delivery Info</string>
+    <string name="delivery_address_timeslot_summary">Time:</string>
+    <string name="payment_method">Choose Payment Method</string>
+    <string name="payment_method_selected">Payment Method Selected</string>
+    <string name="order_success_message">Your order has been successfully placed!</string>
+</resources>

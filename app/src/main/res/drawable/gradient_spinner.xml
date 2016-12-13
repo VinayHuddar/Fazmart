@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item><shape>
+            <!--<gradient android:angle="90" android:endColor="#B3BBCC" android:startColor="#E8EBEF" android:type="linear" />-->
+            <gradient android:angle="90" android:endColor="@color/lightest_grey" android:startColor="@color/lighter_grey" android:type="linear" />
+            <corners android:radius="4dp" />
+            <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+        </shape></item>
+        <item ><bitmap android:gravity="bottom|right" android:src="@drawable/ic_action_expand_small" />
+        </item>
+    </layer-list></item>
+</selector>

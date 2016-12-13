@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context="com.fazmart.androidapp.View.Checkout.OrderSummaryActivity_ItemsFragment">
+
+    <ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/items_summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+</RelativeLayout>
+<!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/layout/fragment_ordersummary_items_summary.xml -->

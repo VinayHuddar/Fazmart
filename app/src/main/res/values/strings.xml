@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Fazmart</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_grocery_store_landing_screen">Top Categories</string>
+    <string name="grocery_main_cat1">Kitchen &amp; Pooja</string>
+    <string name="grocery_main_cat2">Personal Care</string>
+    <string name="grocery_main_cat3">Home Care</string>
+    <string name="grocery_kitchen_pooja_subcat1">Daily Fresh</string>
+    <string name="grocery_kitchen_pooja_subcat2">Breakfast</string>
+    <string name="grocery_kitchen_pooja_subcat3">Cooking</string>
+    <string name="grocery_kitchen_pooja_subcat4">Instant Food</string>
+    <string name="grocery_kitchen_pooja_subcat5">Beverages</string>
+    <string name="grocery_kitchen_pooja_subcat6">Breads, Biscuits &amp; Cakes</string>
+    <string name="grocery_kitchen_pooja_subcat7">Other Groceries</string>
+    <string name="grocery_kitchen_pooja_subcat8">Refrigerator</string>
+    <string name="grocery_kitchen_pooja_subcat9">Meat</string>
+    <string name="grocery_kitchen_pooja_subcat10">Organic &amp; Ayurveda</string>
+    <string name="grocery_kitchen_pooja_subcat11">Regional Food</string>
+    <string name="grocery_kitchen_pooja_subcat12">Imported &amp; Gourmet</string>
+    <string name="grocery_kitchen_pooja_subcat13">Pooja Needs</string>
+    <string name="title_activity_product_listing">Products</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="my_account">My Account</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="signin_benefits_note">Sign in for additional features and benefits</string>
+    <string name="home">Home </string>
+    <string name="browse_and_pick">Browse and Pick</string>
+    <string name="search">Search</string>
+    <string name="my_cart">My Cart</string>
+    <string name="track_order">Track My Order</string>
+    <string name="offers">Offers</string>
+    <string name="refer_friends">Refer Friends</string>
+    <string name="call_us">Call Us</string>
+    <string name="help">Help</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_voice_search">Voice Search</string>
+    <string name="action_barcode_search">Voice Search</string>
+    <string name="action_add_to_cart">Add to Cart</string>
+    <string name="action_notify">Notify</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_product_detail_screen">Product Details</string>
+    <string name="selected_product_id">Selected Product ID</string>
+
+    <string name="search_hint">Search in Fazmart...</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_cart_screen">Cart</string>
+
+    <string name="title_activity_delivery_info">Delivery Info</string>
+    <string name="title_activity_order_summary">Order Summary</string>
+    <string name="title_activity_my_account">My Account</string>
+    <string name="title_activity_perf">PerfActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_loading_screen">LoadingScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="tag_line">Your Neighbourhood Grocer</string>
+    <string name="loading_message">Loading...Please Wait</string>
+
+    <string name="cart_total">Total :</string>
+    <string name="cart_delivery_charges">Delivery :</string>
+    <string name="cart_you_pay">You Pay :</string>
+    <string name="cart_savings">Savings :</string>
+
+    <string name="network_error_label">Network Error</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="default_address_setting">Set this as your default address?</string>
+    <string name="address_selector_dialog_title">Tap on an address to select</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer close</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="delivery_address_checkbox_label">Set as default address</string>
+
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
+
+</resources>

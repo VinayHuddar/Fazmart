@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/apt_selector_spinner_dropdown"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textColor="@color/dark_grey"
+    android:textSize="@dimen/abc_text_size_subhead_material"
+    android:background="@color/white"
+    android:padding="5dp"/>
+<!-- From: file:/Users/vinayhuddar/AndroidStudioProjects/MyApps/Fazmart/app/src/main/res/layout/apt_selector_spinner_dropdown.xml -->

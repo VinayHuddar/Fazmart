@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Used in ProductListActivity.java -->
+    <string-array name="filters">
+        <item>None</item>
+        <item>Price</item>
+        <item>Brand</item>
+        <item>Offers</item>
+    </string-array>
+
+    <string-array name="nav_drawer_menu">
+        <item>Sign in</item>
+        <item>My Daily Buys</item>
+        <item>My Order History</item>
+        <item>My Spend Trend</item>
+        <item>My Rewards</item>
+        <item>New Offers</item>
+        <item>Invite Friends</item>
+        <item>Contact Us</item>
+        <item>Policies</item>
+    </string-array>
+
+    <string-array name="delivery_time_slots">
+        <item>6AM - 7AM</item>
+        <item>7AM - 8AM</item>
+        <item>8AM - 9AM</item>
+        <item>9AM - 10AM</item>
+        <item>10AM - 11AM</item>
+        <item>11AM - 12PM</item>
+        <item>12PM - 1PM</item>
+        <item>1PM - 2PM</item>
+        <item>2PM - 3PM</item>
+        <item>3PM - 4PM</item>
+        <item>4PM - 5PM</item>
+        <item>5PM - 6PM</item>
+        <item>6PM - 7PM</item>
+        <item>7PM - 8PM</item>
+        <item>8PM - 9PM</item>
+        <item>9PM - 10PM</item>
+    </string-array>
+
+    <string-array name="payment_mode">
+        <item>Cash on Delivery</item>
+        <item>Credit Card / Debit Card / Net Banking</item>
+    </string-array>
+</resources>

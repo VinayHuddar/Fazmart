@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fazmart.androidapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".FazmartApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/fazmart"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".View.Search.SearchActivity" />
+
+        <activity
+            android:name=".LoadingScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.IntegratedServicesScreen"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".View.CategoryActivity"
+            android:parentActivityName=".View.IntegratedServicesScreen"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.IntegratedServicesScreen" />
+        </activity>
+        <activity
+            android:name=".View.ProductListActivity"
+            android:parentActivityName=".View.CategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.CategoryActivity" />
+        </activity>
+        <activity
+            android:name=".View.ProductDetailActivity"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.ProductListActivity" />
+        </activity>
+        <activity
+            android:name=".View.Search.SearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".View.CartActivity"
+            android:label="@string/title_activity_cart_screen"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".View.SignInActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".View.Checkout.DeliveryDataActivity"
+            android:label="@string/title_activity_delivery_info"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".View.Checkout.OrderSummaryActivity"
+            android:label="@string/title_activity_order_summary" >
+        </activity>
+        <activity
+            android:name=".View.UserAccount.MyAccountActivity"
+            android:label="@string/title_activity_my_account"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name=".Calendar.CalendarActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.exina.android.calendar.date" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.exina.android.calendar.date" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.Search.SearchQueryTakerActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTop" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="true">
+
+    <TextView android:id="@+id/address_selector_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_blue"
+        android:text="@string/address_selector_dialog_title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout android:id="@+id/add_new_address_button_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button android:id="@+id/add_new_address_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/add_new_address"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/white_button"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
+
+    <ListView android:id="@+id/address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_new_address_button_container"
+        android:layout_below="@id/address_selector_dialog_title"
+        android:divider="@color/primary_color"
+        android:dividerHeight="1dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:background="@color/white"/>
+
+</RelativeLayout>

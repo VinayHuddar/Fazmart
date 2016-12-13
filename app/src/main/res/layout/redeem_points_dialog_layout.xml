@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redeem_points_message"
+            android:textSize="@dimen/abc_text_size_medium_material"/>
+        <TextView android:id="@+id/points_accumulated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/redeem_points_field"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="13dip"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/redeem_points_hint_text"/>
+</LinearLayout>
